@@ -1,33 +1,38 @@
-body {
-    font-family: Roboto, sans-serif;
-    color: #333;
-    font-size: 16px;
-    line-height: 1.5;
+:root {
+    --main-text-color: #333;
+    --main-background-color: #fff;
+    --highlight-color: #ff7f00;
+    --font-family: 'Roboto', sans-serif;
   }
   
-  .element-class {
-    background-color: #fff;
+  body {
+    font-family: var(--font-family);
+    color: var(--main-text-color);
+    background-color: var(--main-background-color);
   }
   
-  .text-link:hover,
-  .text-link:focus {
-    color: #00f;
+  .header__contact,
+  .footer__contact {
+    color: var(--main-text-color);
+  }
+  
+  .header__contact:hover,
+  .header__contact:focus,
+  .footer__contact:hover,
+  .footer__contact:focus {
+    color: var(--highlight-color);
   }
   
   button,
-  input[type="submit"] {
+  a:not(.header__contact):not(.footer__contact) {
     cursor: pointer;
-    background-color: #00f;
-    color: #fff;
+    color: var(--main-text-color);
   }
   
-  button:active,
-  input[type="submit"]:active {
-    background-color: #00a;
+  button:hover,
+  button:focus,
+  a:not(.header__contact):not(.footer__contact):hover,
+  a:not(.header__contact):not(.footer__contact):focus {
+    color: var(--highlight-color);
   }
   
-  :root {
-    --text-color: #333;
-    --background-color: #fff;
-    --highlight-color: #00f;
-  }
