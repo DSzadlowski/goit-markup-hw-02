@@ -1,38 +1,32 @@
 :root {
-    --main-text-color: #333;
-    --main-background-color: #fff;
-    --highlight-color: #ff7f00;
+    --main-color: #333;
+    --text-color: #fff;
+    --highlight-color: #ff00ff;
     --font-family: 'Roboto', sans-serif;
+    --font-size: 16px;
+    --line-height: 1.5;
   }
   
   body {
     font-family: var(--font-family);
-    color: var(--main-text-color);
-    background-color: var(--main-background-color);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    color: var(--text-color);
   }
   
-  .header__contact,
-  .footer__contact {
-    color: var(--main-text-color);
-  }
-  
-  .header__contact:hover,
-  .header__contact:focus,
-  .footer__contact:hover,
-  .footer__contact:focus {
+  a, a:visited, a:focus, a:hover, a:active {
     color: var(--highlight-color);
   }
   
-  button,
-  a:not(.header__contact):not(.footer__contact) {
+  button, input[type="button"], input[type="submit"] {
     cursor: pointer;
-    color: var(--main-text-color);
   }
   
-  button:hover,
-  button:focus,
-  a:not(.header__contact):not(.footer__contact):hover,
-  a:not(.header__contact):not(.footer__contact):focus {
+  .header-contact, .footer-contact {
+    color: var(--main-color);
+  }
+  
+  .header-contact:hover, .header-contact:focus, .footer-contact:hover, .footer-contact:focus {
     color: var(--highlight-color);
   }
   
