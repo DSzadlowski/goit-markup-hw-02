@@ -5,20 +5,29 @@ body {
     line-height: 1.5;
   }
   
-  .class-name {
-    color: #333;
-    font-weight: 400;
+  .element-class {
+    background-color: #fff;
   }
   
-  a, button {
+  .text-link:hover,
+  .text-link:focus {
+    color: #00f;
+  }
+  
+  button,
+  input[type="submit"] {
     cursor: pointer;
-    color: #333;
+    background-color: #00f;
+    color: #fff;
   }
   
-  a:hover,
-  a:focus,
-  button:hover,
-  button:focus {
-    color: #999;
+  button:active,
+  input[type="submit"]:active {
+    background-color: #00a;
   }
   
+  :root {
+    --text-color: #333;
+    --background-color: #fff;
+    --highlight-color: #00f;
+  }
