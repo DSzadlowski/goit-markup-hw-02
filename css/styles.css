@@ -1,32 +1,36 @@
-:root {
-    --main-color: #333;
-    --text-color: #fff;
-    --highlight-color: #ff00ff;
-    --font-family: 'Roboto', sans-serif;
-    --font-size: 16px;
-    --line-height: 1.5;
+/* Globalne stylizacje */
+body {
+    font-family: Roboto, sans-serif;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
   }
   
-  body {
-    font-family: var(--font-family);
-    font-size: var(--font-size);
-    line-height: var(--line-height);
-    color: var(--text-color);
+  /* Selektory klasy */
+  .header-text,
+  .footer-text {
+    color: #333;
   }
   
-  a, a:visited, a:focus, a:hover, a:active {
-    color: var(--highlight-color);
+  .header-text:hover,
+  .header-text:focus,
+  .footer-text:hover,
+  .footer-text:focus {
+    color: #0071c5;
   }
   
-  button, input[type="button"], input[type="submit"] {
+  /* Interaktywne elementy */
+  button,
+  a {
     cursor: pointer;
   }
   
-  .header-contact, .footer-contact {
-    color: var(--main-color);
+  button:active,
+  button:focus,
+  a:active,
+  a:focus {
+    color: #0071c5;
   }
   
-  .header-contact:hover, .header-contact:focus, .footer-contact:hover, .footer-contact:focus {
-    color: var(--highlight-color);
-  }
+  
   
