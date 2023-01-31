@@ -1,6 +1,7 @@
 /* Globalne stylizacje */
 body {
     font-family: Roboto, sans-serif;
+    font-weight: 400;
     color: #333;
     font-size: 16px;
     line-height: 1.5;
