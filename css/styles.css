@@ -6,25 +6,35 @@ body {
     font-size: 16px;
      }
 
-  .heder .footer, :focus {
-    color: chartreuse;
-  }
+    a.contact-text {
+      color: rgb(196, 11, 11);
+      transition: color 0.2s ease-in-out;
+    }
+    
+    a.contact-text:hover,
+    a.contact-text:focus {
+      color: blue;
+    }
 
-  .main :active {
-    color:green
-  }
- 
   button,
   a {
     cursor: pointer;
   }
   
-  button:active,
+  button,
+  a {
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(139, 10, 10);
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    }
+
+  button:hover,
   button:focus,
-  a:active,
-  a:focus {
-    color: #5a0c0c;
-  }
-  
-  
-  
+    a:hover,
+    a:focus {
+    background-color: blue;
+    color: white;
+    }
