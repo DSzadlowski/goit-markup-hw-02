@@ -8,12 +8,12 @@ body {
 
   .header .contact:active,
   .footer .contact:active {
-    color: blue;
+      color: rgb(255, 60, 0);
   }
   .header .contact:hover,
   .footer .contact:hover {
-       color: #ff0004;
-     }
+       color: #f6ff00;
+  }
  
   button,
   a {
