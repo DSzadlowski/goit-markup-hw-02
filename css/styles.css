@@ -6,14 +6,11 @@ body {
     font-size: 16px;
      }
 
-  .header .contact:active,
-  .footer .contact:active {
-      color: rgb(255, 60, 0);
-  }
-  .header .contact:hover,
-  .footer .contact:hover {
-       color: #f6ff00;
-  }
+  .header .link .contact,
+  .header .link .contact  :active :focus :hover {
+      color:crimson
+    }
+   
  
   button,
   a {
@@ -24,7 +21,7 @@ body {
   button:focus,
   a:active,
   a:focus {
-    color: #c50000;
+    color: #5a0c0c;
   }
   
   
