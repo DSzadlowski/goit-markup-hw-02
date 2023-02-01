@@ -6,19 +6,13 @@ body {
     font-size: 16px;
      }
 
-      .header.contact,
-      .footer .contact {
-       color: #007bff;
-       transition: color 0.3s;
+  .header .contact:active,
+  .header .contact:focus,
+  .footer .contact:active,
+  .footer .contact:focus {
+       color: #ff0004;
      }
-     
-     .header .contact:hover,
-     .header .contact:focus,
-     .footer .contact:hover,
-     .footer .contact:focus {
-       color: #0000ff;
-     }
-  
+ 
   button,
   a {
     cursor: pointer;
@@ -28,7 +22,7 @@ body {
   button:focus,
   a:active,
   a:focus {
-    color: #0700c5;
+    color: #c50000;
   }
   
   
