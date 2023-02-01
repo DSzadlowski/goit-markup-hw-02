@@ -1,25 +1,25 @@
-/* Globalne stylizacje */
+
 body {
     font-family: Roboto, sans-serif;
     font-weight: 400;
     color: rgb(51, 51, 51);
     font-size: 16px;
      }
+     
+text
+     .header .contact,
+     .footer .contact {
+       color: #007bff;
+       transition: color 0.2s;
+     }
+     
+     .header .contact:hover,
+     .header .contact:focus,
+     .footer .contact:hover,
+     .footer .contact:focus {
+       color: #007bff;
+     }
   
-  /* Selektory klasy */
-  .header-text,
-  .footer-text {
-    color: rgb(51, 51, 51);
-  }
-  
-  .header-text:hover,
-  .header-text:focus,
-  .footer-text:hover,
-  .footer-text:focus {
-    color: #0071c5;
-  }
-  
-  /* Interaktywne elementy */
   button,
   a {
     cursor: pointer;
