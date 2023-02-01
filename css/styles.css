@@ -1,15 +1,17 @@
 
 body {
     font-family: Roboto, sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     color: rgb(51, 51, 51);
     font-size: 16px;
      }
 
   .header .contact:active,
-  .header .contact:focus,
-  .footer .contact:active,
-  .footer .contact:focus {
+  .footer .contact:active {
+    color: blue;
+  }
+  .header .contact:hover,
+  .footer .contact:hover {
        color: #ff0004;
      }
  
@@ -22,7 +24,7 @@ body {
   button:focus,
   a:active,
   a:focus {
-    color: #c50000;
+    color: #0700c5;
   }
   
   
