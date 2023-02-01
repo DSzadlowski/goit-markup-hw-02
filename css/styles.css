@@ -19,10 +19,6 @@ body {
   button,
   a {
     cursor: pointer;
-  }
-  
-  button,
-  a {
     background-color: white;
     color: black;
     text-decoration: none;
