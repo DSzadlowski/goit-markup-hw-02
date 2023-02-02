@@ -1,3 +1,10 @@
+:root {
+  --color: blue;
+}
+
+button {
+  color: var(--main-color, blue)
+}
 
 body {
     font-family: Roboto, sans-serif;
@@ -7,19 +14,19 @@ body {
      }
 
     a.contact-text {
-      color: rgb(196, 11, 11);
+      color: var(--color);
       transition: color 0.2s ease-in-out;
     }
     
     a.contact-text:hover,
     a.contact-text:focus {
-      color: blue;
+      color: var(--color);
     }
-
+  
   button,
   a {
     cursor: pointer;
-    background-color: white;
+    background-color: rgba(245, 240, 240, 0.945);
     color: black;
     text-decoration: none;
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -29,6 +36,6 @@ body {
   button:focus,
     a:hover,
     a:focus {
-    background-color: blue;
-    color: white;
+    background-color: rgb(52, 6, 238);
+    color: rgb(12, 12, 12);
     }
